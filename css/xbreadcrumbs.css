@@ -1,0 +1,75 @@
+/*!
+  xBreadcrumbs 2.1.0 jQuery Plugin
+  (c) 2010-2014 w3Blender.com
+  For any questions and support please visit www.w3blender.com.
+*/
+.xbreadcrumbs {
+  position: relative;
+  z-index: 1000;
+  clear: both;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+.xbreadcrumbs li.current {
+  border-right: none;
+}
+.xbreadcrumbs li.current a {
+  color: #333;
+  font-weight: bold;
+}
+.xbreadcrumbs li a {
+  color: #666666;
+  text-decoration: none;
+}
+.xbreadcrumbs li a:hover,
+.xbreadcrumbs li.hover a {
+  color: #0a8ecc;
+}
+.xbreadcrumbs li ul {
+  position: absolute;
+  float: left;
+  padding: 3px;
+  background-color: #333;
+  width: 180px;
+  top: 25px;
+  display: none;
+}
+.xbreadcrumbs li ul li {
+  float: left;
+  width: 100%;
+  border-right: none;
+  height: auto;
+}
+.xbreadcrumbs li ul li a {
+  text-decoration: none;
+  color: #ccc !important;
+  display: block;
+  padding: 7px;
+  border-bottom: 1px dotted #0099D8;
+}
+.xbreadcrumbs li ul li a:hover {
+  background-color: #0099D8;
+}
+.xbreadcrumbs li ul li:last-child a {
+  border-bottom: none;
+}
+.xbreadcrumbs,
+.xbreadcrumbs li,
+.xbreadcrumbs ul,
+.xbreadcrumbs ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.xbreadcrumbs,
+.xbreadcrumbs li {
+  float: left;
+}
+.xbreadcrumbs ul {
+  display: block;
+}
+.xbreadcrumbs li {
+  padding: 6px;
+  line-height: 100%;
+  border-right: 1px solid #cecece;
+}

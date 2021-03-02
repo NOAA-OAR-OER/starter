@@ -1,0 +1,217 @@
+@media print {
+  @page {
+    margin: 2cm 1cm 0 1cm !important;
+  }
+  body {
+    font: 13pt;
+    line-height: 1.2 !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .content {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+  }
+  .expedition-content {
+    margin-top: 0 !important;
+  }
+  header, nav, aside, footer, .log-sidebar-content {
+    display: none !important;
+  }
+  .expedition-header {
+    margin-top: -10px !important;
+  }
+  .expedition-header-text {
+    margin: 0px !important;
+    padding: 0 !important;
+    font-size: 18pt !important;
+    text-align: left !important;
+    text-decoration: none;
+  }
+  .expedition-header > img {
+    opacity: 0 !important;
+  }
+  .expedition-header-text:link {
+    content: attr(link) !important;
+    font-size: 12pt !important;
+  }
+  .breadcrumb {
+    margin-top: 1.5em !important;
+  }
+  .breadcrumb > li > a {
+    color: #000 !important;
+    margin: 0 !important;
+    text-decoration: none !important;
+  }
+  .breadcrumb > li.active {
+    font-weight: bold !important;
+  }
+  .breadcrumb > li > a:link:after {
+    content: "" !important;
+  }
+  h1 {
+    font-size: 24pt !important;
+  }
+  h2, h3, h4 {
+    font-size: 14pt !important;
+    margin-top: 25px !important;
+  }
+  a {
+    page-break-inside:avoid !important;
+  }
+  blockquote {
+    page-break-inside: avoid !important;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after:avoid !important;
+    page-break-inside:avoid !important;
+  }
+  img {
+    page-break-inside:avoid !important;
+    page-break-after:avoid !important;
+  }
+  table, pre {
+    page-break-inside:avoid !important;
+  }
+  ul, ol, dl {
+    page-break-before:avoid !important;
+  }
+  a:link, a:visited, a {
+    background: transparent !important;
+    color: #520 !important;
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-align: left !important;
+  }
+  a[href^=http]:after {
+    content:" <" attr(href) "> " !important;
+  }
+  a:after > img {
+     content: "" !important;
+  }
+  a[href^="#"]:after {
+     content: "" !important;
+  }
+
+  .entry iframe, ins {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    line-height: 0pt !important;
+    white-space: nowrap !important;
+  }
+  .embed-youtube, .embed-responsive {
+    position: absolute !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+  .content:before {
+    content: title:attr(title) !important;
+    font-size: 1em !important;
+    text-align: center !important;
+  }
+  p, address, li, dt, dd, blockquote {
+    font-size: 100% !important;
+  }
+  code, pre {
+    font-family: "Courier New", Courier, mono;
+  }
+  ul, ol {
+    list-style: square; margin-left: 18pt;
+    margin-bottom: 20pt !important;
+  }
+  li {
+    line-height: 1.6em !important;
+  }
+  .content:after {
+    position: fixed !important;
+    bottom: 0 !important;
+    content: "Office of Ocean Exploration and Research - National Oceanic and Atmospheric Administration - U.S. Department of Commerce" !important;
+    text-align: center !important;
+    font-size: 0.65em !important;
+    font-weight:bold !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding-top: 40px !important;
+  }
+  /*WELCOME*/
+  /*reduce 1st element margin*/
+  .expedition-row {
+    margin-top: 0 !important;
+  }
+  /*style text below image*/
+  a.callout {
+    text-decoration: none !important;
+    font-size: 0.65em !important;
+    line-height: 1.25em !important;
+    font-weight: normal !important;
+    float:left !important;
+  }
+  /*replace links with titles below image*/
+  a.callout:after {
+    content: attr(title) !important;
+  }
+  /*remove image text overlay*/
+  .callout-text {
+    display: none !important;
+  }
+  /*Add margin to under images*/
+  .callout > img {
+    margin-bottom: 10px !important;
+  }
+  /*make visible the alternative image outside of jwplayer*/
+  .video-print-img {
+    display: block !important;
+  }
+  /*make videos 3 columns*/
+  .highlight {
+    width: 33% !important;
+    font-size: 0.65em !important;
+    line-height: 1.25em !important;
+    font-weight: normal !important;
+    float:left !important;
+  }
+  /*change font for vid descriptions*/
+  .highlight > h4 {
+    margin-top: 10px !important;
+    font-size: 1em !important;
+  }
+  /*remove learn more button*/
+  .read-more {
+    display: none !important;
+  }
+  /*hide jwplayer divs*/
+  #player1, #player2, #player3, #player4 {
+    display: none !important;
+  }
+  /*DAILYUPDATES*/
+  /*put data-title contents under each image instead of link - this works, but images overlay so you cant see it*/
+  .cbp-item a:link:after {
+    content: attr(data-title) !important;
+    margin-top: 1em !important;
+    font-size: 0.65em !important;
+    line-height: 1em !important;
+    font-weight: normal !important;
+    float:left !important;
+  }
+  /*dont display the date from caption title*/
+  .cbp-l-caption-title {
+    display:none !important;
+  }
+  /*removes column restriction*/
+  .container {
+    width: 100% !important;
+  }
+  /*fit images*/
+  .cbp-wrapper-outer {
+    width: 113% !important;
+  }
+  /*below doesn't work to move image gaps
+  .cbp-item, .cbp-caption, .cbp-caption-defaultWrap, .cbp-caption-activeWrap {
+    padding-bottom: 300px !important;
+  }
+  */
+}

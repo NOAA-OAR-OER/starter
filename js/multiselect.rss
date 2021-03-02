@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:jwplayer="http://rss.jwpcdn.com/">
+<channel>
+
+  <item>
+    <title>Camera 1</title>
+    <jwplayer:source file="https://www.youtube.com/watch?v=yjokuiPQpic" />
+  </item>
+  <item>
+    <title>Camera 2</title>
+    <jwplayer:source file="https://www.youtube.com/watch?v=QBXEUQXEuC8" />
+  </item>
+<item>
+    <title>Camera 3</title>
+    <jwplayer:source file="https://www.youtube.com/watch?v=CQTIAwY--YA" />
+  </item>
+</channel>
+</rss>
